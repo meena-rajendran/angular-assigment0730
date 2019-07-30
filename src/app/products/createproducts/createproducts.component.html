@@ -1,0 +1,11 @@
+<form #prdtform="ngForm" (ngSubmit)="createProducts(prdtform)">
+    ProductName: <input type="text" name="prdtName" [(ngModel)]= "name" 
+    required> 
+    <br> <br> 
+    ProductPrice: <input type="text" name="prdtPrice" [(ngModel)]= "price" required>     
+    <br> <br> 
+    ProductImage: <input type="text" name="prdtImg" [(ngModel)]= "imgpath" required>
+    <button type="submit"> Submit
+    </button>
+    <label>{{statusmessage}}</label>
+</form>

@@ -1,0 +1,11 @@
+<div class="row" >
+        <div class="col-sm-4" *ngFor="let prodt of allProducts">
+          <div class="card" >
+          <img src={{prodt.productimage}} class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">ProductName: {{prodt.productname}}</p>
+              <p class="card-text">ProductId: {{prodt.productid}}</p>     
+              <p class="card-text">Price: {{prodt.productprice | currency:'INR'}}</p>          
+            </div>
+          </div>
+ </div>
